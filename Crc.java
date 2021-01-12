@@ -21,12 +21,6 @@ class Crc {
 		System.out.println("Enter Divisor bits : ");
 		for (int i = 0; i < divisor_bits; i++)
 			divisor[i] = Integer.parseInt(br.readLine());
-		/*
-		 * System.out.print("Data bits are : "); for(int i=0; i< data_bits; i++)
-		 * System.out.print(data[i]); System.out.println();
-		 * System.out.print("divisor bits are : "); for(int i=0; i< divisor_bits; i++)
-		 * System.out.print(divisor[i]); System.out.println();
-		 */
 		tot_length = data_bits + divisor_bits - 1;
 		div = new int[tot_length];
 		rem = new int[tot_length];
@@ -55,10 +49,7 @@ class Crc {
 		System.out.println("Enter CRC code of " + tot_length + " bits : ");
 		for (int i = 0; i < crc.length; i++)
 			crc[i] = Integer.parseInt(br.readLine());
-		/*
-		 * System.out.print("crc bits are : "); for(int i=0; i< crc.length; i++)
-		 * System.out.print(crc[i]); System.out.println();
-		 */
+		
 		for (int j = 0; j < crc.length; j++) {
 			rem[j] = crc[j];
 		}
